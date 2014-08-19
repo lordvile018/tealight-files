@@ -11,15 +11,15 @@ def walk():
        
        if right_side() == None:
             turn(45)
-            move(1)
+            move()
        elif right_side()=='wall':
          turn(-45)
-         move(1)
+         move()
        else:
           turn(45)
-          move(1)
+          move()
     
     else:
-      move(1)
+      move()
 walk()
 # Add your code here
