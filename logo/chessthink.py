@@ -31,7 +31,7 @@ def chessboard():
       turn(-90)
   move(80)
   shading()
-def shading:
+def shading():
   for i in range(0,8):
     if i % 2 == 0:
       move(80)
