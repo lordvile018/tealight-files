@@ -13,7 +13,7 @@ for i in range (0, 400):
         move()
       move()  
     else:
-      turn(1)
+      turn(-1)
   move()
     
 # Add your code here
