@@ -5,5 +5,11 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
-move(1)
+def walk()
+  for i in range (0, 1250)
+    if right_side != 'wall':
+      turn(-90)
+    else:
+      move(1)
+walk()
 # Add your code here
