@@ -10,13 +10,13 @@ def walk():
     if touch()=='wall':
        
        if right_side() == None:
-            turn(45)
+            turn(1)
             move()
        elif right_side()=='wall':
-         turn(-45)
+         turn(-1)
          move()
        else:
-          turn(45)
+          turn(1)
           move()
     
     else:
