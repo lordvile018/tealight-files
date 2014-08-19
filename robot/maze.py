@@ -9,7 +9,7 @@ def walk():
   for i in range (0, 1250):
     if touch()=='wall':
        if right_side=='wall':
-         turn(45)
+         turn(-45)
          move(1)
        else:
           turn(45)
