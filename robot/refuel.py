@@ -19,6 +19,8 @@ for i in range (0, 400):
         turn(-1)
       elif left_side()=='wall':
         turn(1)
+      else:
+        turn(1)
     else:
       turn(count)
       count*=-1
