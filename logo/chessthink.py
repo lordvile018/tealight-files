@@ -2,8 +2,8 @@ from tealight.logo import move, turn
 
 def chessboard():
   for i in range(0,8):
-    move(8)
+    move(80)
     turn(90)
-    move(1)
+    move(10)
     turn(90)
 chessboard()
