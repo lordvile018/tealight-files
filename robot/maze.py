@@ -12,7 +12,7 @@ def walk():
          turn(-45)
          move(1)
        else:
-          turn(-45)
+          turn(45)
           move(1)
     
     else:
