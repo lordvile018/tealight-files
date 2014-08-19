@@ -9,7 +9,6 @@ turn(1)
 count=1
 for i in range (0, 400):
   for j in range (0,3):
-    look()
     if look()=='fruit':
       while touch() !='fruit':
         move()
