@@ -6,7 +6,7 @@ def chessboard():
       move(80)
       turn(90)
     else:
-        move(10)
+        move(80)
         turn(-90)
     if i % 2 == 0:
         move(10)
