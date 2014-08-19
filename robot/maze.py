@@ -5,6 +5,9 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
+
+turn()
+
 def walk():
   for i in range (0, 1250):
     if touch()=='wall':
