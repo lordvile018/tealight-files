@@ -7,5 +7,7 @@ from tealight.robot import (move,
                             right_side)
 for i in range (0,700)
   if look()=='fruit':
-    while
+    while touch()!= 'fruit':
+      move()
+    move()
 # Add your code here
