@@ -4,7 +4,8 @@ from tealight.robot import (move,
                             touch, 
                             smell, 
                             left_side, 
-                            right_side)
+                           right_side)
+count=1
 for i in range (0, 400):
   for j in range (0,3):
     look()
@@ -13,7 +14,8 @@ for i in range (0, 400):
         move()
       move()  
     else:
-      turn(-1)
+      turn(count)
+      count*=-1
   move()
     
 # Add your code here
