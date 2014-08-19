@@ -10,4 +10,6 @@ for i in range (0,700):
     while touch()!= 'fruit':
       move()
     move()
+  else:
+    turn(1)
 # Add your code here
