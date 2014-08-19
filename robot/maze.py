@@ -8,7 +8,7 @@ from tealight.robot import (move,
 def walk():
   for i in range (0, 1250):
     if touch() == 'wall':
-      turn(90)
+      turn(45)
       move(1)
     else:
       move(1)
