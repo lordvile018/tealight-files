@@ -7,12 +7,13 @@ from tealight.robot import (move,
                             right_side)
 def walk():
   for i in range (0, 1250):
-    if touch()=='wall', right_side=='wall':
-      turn(-45)
-      move(1)
-    else if touch() == 'wall':
-      turn(45)
-      move(1)
+    if touch()=='wall'
+       if right_side=='wall':
+         turn(-45)
+         move(1)
+       else:
+          turn(45)
+          move(1)
     
     else:
       move(1)
