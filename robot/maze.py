@@ -6,7 +6,7 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-turn()
+turn(6)
 
 def walk():
   for i in range (0, 1250):
