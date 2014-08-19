@@ -6,3 +6,4 @@ def chessboard():
     turn(90)
     move(1)
     turn(90)
+chessboard()
