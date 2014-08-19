@@ -1,7 +1,7 @@
 from tealight.logo import move, turn
 
 def chessboard():
-  for i in range(0,1):
+  for i in range(0,4):
     move(80)
     turn(90)
     if i % 2 == 0:
