@@ -7,7 +7,7 @@ from tealight.robot import (move,
                             right_side)
 def walk():
   for i in range (0, 1250):
-    if right_side == '':
+    if right_side == None:
       turn(-90)
     else:
       move(1)
