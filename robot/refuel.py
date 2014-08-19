@@ -17,7 +17,7 @@ for i in range (0, 400):
     elif touch()=='wall':
       if right_side()=='wall':
         turn(-1)
-      elif else_side()=='wall':
+      elif left_side()=='wall':
         turn(1)
     else:
       turn(count)
