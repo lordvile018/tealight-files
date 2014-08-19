@@ -9,6 +9,7 @@ def walk():
   for i in range (0, 1250):
     if touch == 'wall':
       turn(-90)
+      move(1)
     else:
       move(1)
 walk()
