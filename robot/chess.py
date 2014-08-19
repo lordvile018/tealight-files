@@ -5,5 +5,7 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
-
+for i in range (0,700)
+  if look()=='fruit':
+    while
 # Add your code here
