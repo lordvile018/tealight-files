@@ -14,8 +14,8 @@ for i in range (0, 400):
       while touch() !='fruit':
         move()
       move()
-    elif touch()=='wall':
-      if right_side()=='wall':
+    #elif touch()=='wall':
+      #if right_side()=='wall':
         
     else:
       turn(count)
