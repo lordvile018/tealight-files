@@ -14,5 +14,6 @@ for i in range (0, 400):
       move()  
     else:
       turn(1)
+  move()
     
 # Add your code here
