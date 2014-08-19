@@ -29,5 +29,6 @@ def chessboard():
     else:
       move(-10)
       turn(-90)
+  move(80)
   
 chessboard()
