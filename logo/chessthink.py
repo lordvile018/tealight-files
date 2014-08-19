@@ -11,4 +11,4 @@ def chessboard():
         move(10)
         turn(-90)
         
-chessboard():
+chessboard()
