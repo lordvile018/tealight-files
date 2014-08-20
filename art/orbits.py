@@ -39,7 +39,8 @@ def handle_frame():
   color("blue")
   
   spot(x,y,8)
-  def handle_keyup(key):
+  
+def handle_keyup(key):
   global ax, ay
   if key == "left":
     ax = -power
