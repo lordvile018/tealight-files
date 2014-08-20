@@ -41,7 +41,7 @@ def handle_frame():
   spot(x,y,8)
   
 def handle_keyup(key):
-  global ax, ay
+  global ax, ay,vx
   if key == "left":
     ax = -power
     while vx!= 0:
