@@ -8,7 +8,7 @@ ax = 0
 ay = 0
 
 power = 0.3
-
+grav=9.8
 def handle_keydown(key):
   global ax, ay
   
@@ -18,9 +18,9 @@ def handle_keydown(key):
   elif key == "right":
     ax = power
   elif key == "up":
-    ay = -power
+    ay = -(power) - grav
   elif key == "down":
-    ay = power
+    ay = power + grav
 
 def handle_keyup(key):
   global ax, ay
