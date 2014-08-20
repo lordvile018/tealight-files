@@ -9,7 +9,7 @@ ay = 0
 
 power = 0.3
 grav=0.2
-mu=0.2
+mu=0.1
 def handle_keydown(key):
   global ax, ay
   if key == "left":
