@@ -33,10 +33,10 @@ def handle_keyup(key):
   elif key == "right":
     ax = power
     while vx!= 0:
-    if vx<0:
-      vx= vx+mu
-    else:
-      vx= vx- mu
+      if vx<0:
+        vx= vx+mu
+      else:
+        vx= vx- mu
   elif key == "up":
     ay = (power)
   elif key == "down":
