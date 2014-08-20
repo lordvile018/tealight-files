@@ -28,7 +28,7 @@ def handle_keyup(key):
   elif key == "right":
     ax = power
   elif key == "up":
-    ay = (-power)
+    ay = (power)
   elif key == "down":
     ay = power
     
