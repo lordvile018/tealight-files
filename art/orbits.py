@@ -41,7 +41,7 @@ def handle_frame():
   vx = vx + ax
   vy = vy + (ay + grav)
   
-  x = x + (vx * mu)
+  x = x + vx 
   y = y + vy
 
   color("blue")
