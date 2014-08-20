@@ -30,11 +30,11 @@ def handle_keyup(key):
     while ax!=0:
       if key=='left':
         ax+= mu
-        if ax > 0
+        if ax > 0:
         ax=0
       if key=='right':
         ax-= mu
-        if ax < 0
+        if ax < 0:
         ax=0
     
   elif key == "up" or key == "down":
