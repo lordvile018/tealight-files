@@ -12,8 +12,6 @@ grav=0.2
 mu=0.1
 def handle_keydown(key):
   global ax, ay
-  
-
   if key == "left":
     ax = -power
   elif key == "right":
