@@ -41,9 +41,9 @@ def handle_frame():
   vx = (vx + ax)
   while vx != 0:
     if vx<0:
-      vx += mu
+      vx = vx+ mu
     else:
-      vx -= mu
+      vx = vx- mu
   vy = vy + (ay + grav)
   
   x = x + vx 
