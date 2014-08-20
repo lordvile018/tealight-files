@@ -21,7 +21,25 @@ def handle_keydown(key):
   elif key == "down":
     ay = power
 
-def handle_keyup(key):
+
+    
+def handle_frame():
+  global x,y,vx,vy,ax,ay
+  
+  color("white")
+  
+  spot(x,y,8)
+  vx = (vx + ax)
+  
+  vy = vy + (ay + grav)
+  
+  x = x + vx 
+  y = y + vy
+
+  color("blue")
+  
+  spot(x,y,8)
+  def handle_keyup(key):
   global ax, ay
   if key == "left":
     ax = -power
@@ -41,22 +59,4 @@ def handle_keyup(key):
     ay = (power)
   elif key == "down":
     ay = power
-    
-def handle_frame():
-  global x,y,vx,vy,ax,ay
-  
-  color("white")
-  
-  spot(x,y,8)
-  vx = (vx + ax)
-  
-  vy = vy + (ay + grav)
-  
-  x = x + vx 
-  y = y + vy
-
-  color("blue")
-  
-  spot(x,y,8)
-  
   
