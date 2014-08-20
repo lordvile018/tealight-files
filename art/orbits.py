@@ -38,16 +38,17 @@ def handle_frame():
   color("white")
   
   spot(x,y,8)
-  vx = (vx + ax)
   while vx != 0:
+    vx = (vx + ax)
+  
     if vx<0:
       vx = vx+ mu
     else:
       vx = vx- mu
-  vy = vy + (ay + grav)
+    vy = vy + (ay + grav)
   
-  x = x + vx 
-  y = y + vy
+    x = x + vx 
+    y = y + vy
 
   color("blue")
   
