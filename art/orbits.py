@@ -25,12 +25,12 @@ def handle_keyup(key):
   global ax, ay
     if key == "left":
       ax = -power
-  elif key == "right":
-    ax = power
-  elif key == "up":
-    ay = (-power)
-  elif key == "down":
-    ay = power
+    elif key == "right":
+      ax = power
+    elif key == "up":
+      ay = (-power)
+    elif key == "down":
+      ay = power
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
