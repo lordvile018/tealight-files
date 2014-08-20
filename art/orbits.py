@@ -29,11 +29,11 @@ def handle_keyup(key):
   if key == "left" or key == "right":
     while ax!=0:
       if key=='left':
-        ax+= mu
+        ax = ax + mu
         if ax > 0:
           ax=0
       if key=='right':
-        ax-= mu
+        ax = ax - mu
         if ax < 0:
           ax=0
     
