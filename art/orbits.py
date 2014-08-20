@@ -24,7 +24,7 @@ def handle_keydown(key):
 def handle_keyup(key):
   global ax, ay
   if key == "left":
-    ax = power
+    ax = -power
   elif key == "right":
     ax = power
   elif key == "up":
@@ -38,10 +38,10 @@ def handle_frame():
   color("white")
   
   spot(x,y,8)
-  vx = vx + ax
+  vx = vx- mu + ax
   vy = vy + (ay + grav)
   
-  x = x + (vx * mu)
+  x = x + (vx + mu)
   y = y + vy
 
   color("blue")
