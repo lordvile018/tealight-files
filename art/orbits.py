@@ -9,6 +9,7 @@ ay = 0
 
 power = 0.3
 grav=0.2
+mu=0.1
 def handle_keydown(key):
   global ax, ay
   
@@ -26,7 +27,16 @@ def handle_keyup(key):
   global ax, ay
   
   if key == "left" or key == "right":
-    ax = 0
+    while ax!=0:
+      if key=='left':
+        ax+= mu
+        if ax > 0
+        ax=0
+      if key=='right':
+        ax-= mu
+        if ax < 0
+        ax=0
+    
   elif key == "up" or key == "down":
     ay = grav
     
