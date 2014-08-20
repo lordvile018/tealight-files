@@ -25,8 +25,18 @@ def handle_keyup(key):
   global ax, ay
   if key == "left":
     ax = -power
+    while vx!= 0:
+    if vx<0:
+      vx= vx+mu
+    else:
+      vx= vx- mu
   elif key == "right":
     ax = power
+    while vx!= 0:
+    if vx<0:
+      vx= vx+mu
+    else:
+      vx= vx- mu
   elif key == "up":
     ay = (power)
   elif key == "down":
@@ -39,11 +49,7 @@ def handle_frame():
   
   spot(x,y,8)
   vx = (vx + ax)
-  while vx!= 0:
-    if vx<0:
-      vx= vx+mu
-    else:
-      vx= vx- mu
+  
   vy = vy + (ay + grav)
   
   x = x + vx 
