@@ -4,7 +4,7 @@ from math import sin, cos, pi
 
 def star(x, y, c, size, spines):
   
-  color(a)
+  color(c)
   
   angle = 0
   
