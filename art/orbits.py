@@ -51,7 +51,7 @@ def handle_frame():
   
   x = x + vx
   y = y + vy
-  
+  handle_keyup()
   color("blue")
   
   spot(x,y,8)
