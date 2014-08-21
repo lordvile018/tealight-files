@@ -1,4 +1,5 @@
 from tealight.net import connect, send
+from tealight.utils import now
 connect("racetracktest")
 carNumber=0
 x=0
@@ -16,3 +17,10 @@ def handle_message(message):
         elif type == "registration":
           users.append(message['payload'])
           print users
+def handle_frame():
+  for user in users:
+    if user in lastsend:
+      # the user has actually sent a heartbeat
+      now = now()
+      if (now() - lastsend[user] > 10):
+        print "user disconnect", user
