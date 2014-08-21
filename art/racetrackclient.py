@@ -1,5 +1,5 @@
 from tealight.net import connect, send
-import tealight.utils
+from tealight.utils import now
 import random
 userId= int(tealight.utils.now()) +random.randint(0,1000000)
 connect("racetracktest")
