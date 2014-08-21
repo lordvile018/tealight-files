@@ -1,1 +1,1 @@
-print "A new file!"
+from tealight.net
