@@ -1,7 +1,7 @@
 def handle_keydown(key):
   if key=='left':
       currentDirection= currentDirection- 3
-  elif key='right':
+  elif key=='right':
     currentDirection= currentDirection +3
   elif key== 'up':
     Acc= Acc+2
