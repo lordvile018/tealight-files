@@ -5,7 +5,7 @@ x=0
 users=[]
 lastsend=[]
 def server_handler(message):
-  global carNumber
+  global carNumber, users
   if "type" in message:
     type = message['type']
     if type == "heartbeat":
