@@ -10,4 +10,5 @@ def handle_keydown(key):
 def handle_keyup(key):
    if key=='up':
       Acc=Acc-1
+Vel=0
 Vel= Vel + Acc
