@@ -4,7 +4,7 @@ carNumber=0
 x=0
 users=[]
 lastsend=[]
-def server_handler(message):
+def handle_message(message):
   global carNumber, users
   if "type" in message:
     type = message['type']
