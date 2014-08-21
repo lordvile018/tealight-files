@@ -9,7 +9,7 @@ def server_handler(message):
   if "type" in message:
     type = message['type']
     if type == "heartbeat":
-       users[message['user_id']] = {"last-sent:", message['payload']}
+       users[message['user_id']] = {"last-sent": message['payload']}
        print users
   if message== "connected":
     carNumber= carNumber + 1
