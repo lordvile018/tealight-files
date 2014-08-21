@@ -1,20 +1,17 @@
 
 def direction_handle_keydown(key, currentDirection):
-  global Acc
   if key=='left':
       return currentDirection- 3
   elif key=='right':
     return currentDirection +3
-def accelaration_handle_keydown(key):
+def acceleration_handle_keydown(key, Acc):
   if key== 'up':
-    Acc= Acc+2
+    return Acc+2
   elif key== 'down':
-    Acc== Acc-2
-def x_handle_keyup(key):
+    return Acc-2
+def acceleration_handle_keyup(key, Acc):
    if key=='up':
-      Acc=Acc-1
-def Movement():
-  global Acc
-  Vel= Vel + Acc
+      return Acc-1
+
   
   
