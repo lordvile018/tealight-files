@@ -6,10 +6,11 @@ users=[]
 lastsend={}
 def handle_message(message):
   global carNumber, users
-  if "type" in message:
-    type = message['type']
-    if type == "heartbeat":
-       lastsend[message['user_id']] = {"last-sent": message['payload']}
-    elif type == "registration":
-      users.append(message['payload'])
-      print users
+  if to == "server":
+    if "type" in message:
+      type = message['type']
+      if type == "heartbeat":
+         lastsend[message['user_id']] = {"last-sent": message['payload']}
+      elif type == "registration":
+        users.append(message['payload'])
+        print users
