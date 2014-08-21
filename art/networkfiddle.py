@@ -1,4 +1,6 @@
 from tealight.net import connect, send
 connect("networkfiddle")
 send ('hi')
-print message
+def handle_message(message):
+  print "recieved message" +message
+  
