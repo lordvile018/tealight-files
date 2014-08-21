@@ -1,3 +1,4 @@
+from tealight import (line, spot, circle, box, rectangle, image, text, background, color)
 def handle_keydown(key):
   global Acc
   if key=='left':
@@ -14,4 +15,5 @@ def handle_keyup(key):
 def Movement():
   global Acc
   Vel= Vel + Acc
+  
   
