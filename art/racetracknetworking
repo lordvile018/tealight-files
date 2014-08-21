@@ -1,11 +1,13 @@
 from tealight.net import connect, send
+from tealight import art (text)
 from tealight.utils import now
 connect("racetracktest")
+text("This is the server!")
 carNumber=0
 x=0
 users=[]
 lastsend={}
-def handle_message(message):
+def server_handle_message(message):
   global carNumber, users
   if "to" in message:
     to=message['to']
@@ -17,7 +19,7 @@ def handle_message(message):
         elif type == "registration":
           users.append(message['payload'])
           print users
-def handle_frame():
+def server_handle_frame():
   for user in users:
     if user in lastsend:
       # the user has actually sent a heartbeat
