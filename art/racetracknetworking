@@ -1,1 +1,10 @@
-print "A new file!"
+from tealight.net import connect, send
+connect("racetracktest")
+carNumber=0
+def handle_message(message):
+  global carNumber
+  if message== "connected":
+    carNumber= carNumber + 1
+def draw_car_loop(carNumber):
+  for i in range (0,carNumber):
+    #call drawcar function in 
