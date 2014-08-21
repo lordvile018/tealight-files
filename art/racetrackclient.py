@@ -8,4 +8,12 @@ send("connected")
   #for i in range (0, carNumber):
   #call draw car function and increment placement
   #horizontally? also change colour
+def authenticated_send(data, to, type):
+  data = {"to": to, "type": type, "payload": data, "user_id": userId}
+  send(data)
+  print "Just sent", data
+  
+  
 send (userId)
+def handle_frame():
+  authenticated_send(userId, "server", "heartbeat")
