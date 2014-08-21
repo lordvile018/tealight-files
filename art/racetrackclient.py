@@ -1,5 +1,5 @@
 from tealight.net import connect, send
-from tealight.utils import now
+import tealight.utils
 import random
 userId= int(tealight.utils.now()) +random.randint(0,1000000)
 connect("racetracktest")
@@ -15,7 +15,7 @@ def authenticated_send(data, to, type):
   
   
 authenticated_send(userId, "server", "registration")
-lastSent = now()
+lastSent = tealight.utils.now()
 authenticated_send(tealight.utils.now(), "server", "heartbeat")
-if (now()-lastSent>1):
+if (tealight.utils.now()-lastSent>1):
   authenticated_send(tealight.utils.now(), "server", "heartbeat")
