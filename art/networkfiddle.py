@@ -1,3 +1,3 @@
 from tealight.net import connect, send
-connect("networkfiddle2")
+connect("networkfiddle")
 send ('hi', echo = False)
