@@ -13,7 +13,7 @@ def handle_message(message):
       if "type" in message:
         type = message['type']
         if type == "heartbeat":
-           lastsend[message['user_id']] = {"last-sent": message['payload']}
+           lastsend[message['user_id']] = message['payload']
         elif type == "registration":
           users.append(message['payload'])
           print users
