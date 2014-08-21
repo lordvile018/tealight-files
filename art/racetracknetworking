@@ -2,12 +2,13 @@ from tealight.net import connect, send
 connect("racetracktest")
 carNumber=0
 x=0
+users=[]
 def server_handler(message):
   global carNumber
   if message== "connected":
     carNumber= carNumber + 1
-    send ("message_id": "registration", "data": carNumber)
+    send ({"message_id": "registration", "data": carNumber})
   elif message== userId:
-    users(x)=userID
+    users[x]=userID
     x+1
 print message
