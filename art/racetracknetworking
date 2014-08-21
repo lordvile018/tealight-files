@@ -3,8 +3,14 @@ connect("racetracktest")
 carNumber=0
 x=0
 users=[]
+lastsend=[]
 def server_handler(message):
   global carNumber
+  if "type" in message:
+    type = message['type']
+    if type == "heartbeat":
+       users[message['user_id']] = {"last-sent:", message['payload']}
+       print users
   if message== "connected":
     carNumber= carNumber + 1
     send ({"message_id": "registration", "data": carNumber})
@@ -12,5 +18,3 @@ def server_handler(message):
     users[x]=userID
     x+1
     print message
-def handle_frame():
-  if
