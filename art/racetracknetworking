@@ -21,6 +21,6 @@ def handle_frame():
   for user in users:
     if user in lastsend:
       # the user has actually sent a heartbeat
-      now = now()
-      if (now() - lastsend[user] > 10):
+      time_now = now()
+      if (time_now - lastsend[user] > 10):
         print "user disconnect", user
