@@ -6,7 +6,7 @@ def server_handler(message):
   global carNumber
   if message== "connected":
     carNumber= carNumber + 1
-    send ({"message_id": "registration", "data": carNumber})
+    send ("message_id": "registration", "data": carNumber)
   elif message== userId:
     users(x)=userID
     x+1
