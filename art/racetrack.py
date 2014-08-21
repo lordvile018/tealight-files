@@ -1,9 +1,9 @@
 
 def direction_handle_keydown(key, currentDirection):
   if key=='left':
-      return currentDirection- 3
+      return {"direction": currentDirection- 3, "key": key}
   elif key=='right':
-    return currentDirection +3
+    return {"direction": currentDirection +3, "key": key}
 def acceleration_handle_keydown(key, Acc):
   if key== 'up':
     return Acc+2
