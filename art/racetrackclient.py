@@ -16,4 +16,4 @@ def authenticated_send(data, to, type):
   
 send (userId)
 def handle_frame():
-  authenticated_send(userId, "server", "heartbeat")
+  authenticated_send(tealight.utils.now(), "server", "heartbeat")
