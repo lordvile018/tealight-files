@@ -14,6 +14,6 @@ def authenticated_send(data, to, type):
   print "Just sent", data
   
   
-authenticated_send(userId, "nope", "registration")
+authenticated_send(userId, "server", "registration")
 def handle_frame():
   authenticated_send(tealight.utils.now(), "server", "heartbeat")
