@@ -2,7 +2,7 @@ from tealight.net import connect, send
 from tealight.art import  text
 from tealight.utils import now
 connect("racetracktest")
-text(100, 200, "This is the server! would you like a drink?")
+text(100, 200, "This is the server! He will give you drinks!")
 carNumber=0
 x=0
 users=[]
