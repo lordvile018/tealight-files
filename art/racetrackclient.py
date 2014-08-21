@@ -18,6 +18,7 @@ authenticated_send(userId, "server", "registration")
 lastSent = tealight.utils.now()
 authenticated_send(tealight.utils.now(), "server", "heartbeat")
 def handle_frame():
+  global lastSent
   if (tealight.utils.now()-lastSent>1):
     authenticated_send(tealight.utils.now(), "server", "heartbeat")
     lastSent = tealight.utils.now()
