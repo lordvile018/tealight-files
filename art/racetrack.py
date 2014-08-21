@@ -1,4 +1,5 @@
 def handle_keydown(key):
+  global Acc
   if key=='left':
       currentDirection= currentDirection- 3
   elif key=='right':
