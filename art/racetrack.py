@@ -11,6 +11,6 @@ def handle_keydown(key):
 def handle_keyup(key):
    if key=='up':
       Acc=Acc-1
-global Acc:
+global Acc
   Vel=0
   Vel= Vel + Acc
