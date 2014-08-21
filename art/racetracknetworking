@@ -2,7 +2,7 @@ from tealight.net import connect, send
 connect("racetracktest")
 carNumber=0
 x=0
-users={}
+users=[]
 lastsend={}
 def handle_message(message):
   global carNumber, users
@@ -12,5 +12,5 @@ def handle_message(message):
        lastsend[message['user_id']] = {"last-sent": message['payload']}
        print users
     elif type == "registration":
-      users[] = message['payload']
+      users.append(message['payload'])
       print users
