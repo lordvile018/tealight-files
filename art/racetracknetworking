@@ -8,7 +8,7 @@ def handle_message(message):
   global carNumber, users
   if "to" in message:
     to=message['to']
-    if to == "server"
+    if to == "server":
       if "type" in message:
         type = message['type']
         if type == "heartbeat":
