@@ -9,7 +9,7 @@ def handle_message(message):
   if "type" in message:
     type = message['type']
     if type == "heartbeat":
-       users[message[2]] = {"last-sent": message['payload']}
+       users[message['user_id']] = {"last-sent": message[2]}
        print users
   if message== "connected":
     carNumber= carNumber + 1
