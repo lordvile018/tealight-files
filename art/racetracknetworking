@@ -47,5 +47,6 @@ def handle_frame():
         print "user disconnect", user
         lastsend.pop(user, None)
         users.remove(user)
+        user_positions.remove(user)
   for pair in user_positions:
     draw_triangle(user_positions[pair][0], user_positions[pair][1], user_positions[pair][2], 10, "red")
