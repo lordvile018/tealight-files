@@ -23,6 +23,8 @@ def handle_message(message):
         elif type == "status":
             print message
             last_state = "State change: " + message['payload']['state'] + ": " + str(now())
+        elif type =="position":
+          print message
 def handle_frame():
   global last_state, lastsend, users
   color("white")
