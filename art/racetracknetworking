@@ -29,9 +29,10 @@ def handle_message(message):
           user_positions[message['user_id']] = [message['payload']['x'], message['payload']['y']]
 def handle_frame():
   global last_state, lastsend, users
-  draw_track()
+  
   color("white")
   box(0,0,1000,1000)
+  draw_track()
   color("black")
   text(75, 200, "This is the server! He will give you drinks!")
   text(75, 250, str(len(users)) + " users connected.")
