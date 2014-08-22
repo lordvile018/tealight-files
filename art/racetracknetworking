@@ -21,6 +21,7 @@ def handle_message(message):
           print users
 def handle_frame():
   color("white")
+  print "call"
   rectangle(0,0,1000,1000)
   for user in users:
     if user in lastsend:
