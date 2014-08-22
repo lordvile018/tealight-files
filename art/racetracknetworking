@@ -22,7 +22,7 @@ def handle_message(message):
 def handle_frame():
   color("white")
   print "call"
-  rectangle(0,0,1000,1000)
+  box(0,0,1000,1000)
   for user in users:
     if user in lastsend:
       # the user has actually sent a heartbeat
