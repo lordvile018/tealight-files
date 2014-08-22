@@ -17,7 +17,6 @@ def authenticated_send(data, to, type):
 authenticated_send(userId, "server", "registration")
 
 authenticated_send(tealight.utils.now(), "server", "heartbeat")
-def client_handle_frame(last_sent):
-  if (tealight.utils.now()-last_sent>1):
-    authenticated_send(tealight.utils.now(), "server", "heartbeat")
-    lastSent = tealight.utils.now()
+def client_handle_frame():
+  authenticated_send(tealight.utils.now(), "server", "heartbeat")
+  lastSent = tealight.utils.now()
