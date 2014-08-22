@@ -6,6 +6,7 @@ carNumber=0
 x=0
 users=[]
 lastsend={}
+last_state = ""
 def handle_message(message):
   global carNumber, users
   if "to" in message:
@@ -20,13 +21,14 @@ def handle_message(message):
            print users
         elif type == "status":
             print message
-            text(75, 300,message['payload'])
+            last_state = message['payload']
 def handle_frame():
   color("white")
   box(0,0,1000,1000)
   color("black")
   text(75, 200, "This is the server! He will give you drinks!")
   text(75, 250, str(len(users)) + " users connected.")
+  text(75, 300, last_state)
   for user in users:
     if user in lastsend:
       # the user has actually sent a heartbeat
