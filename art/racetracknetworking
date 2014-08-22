@@ -8,7 +8,7 @@ users=[]
 lastsend={}
 last_state = ""
 def handle_message(message):
-  global carNumber, users
+  global carNumber, users, last_state
   if "to" in message:
     to=message['to']
     if to == "server":
