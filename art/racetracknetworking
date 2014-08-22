@@ -24,7 +24,7 @@ def handle_message(message):
             print message
             last_state = "State change: " + message['payload']['state']
 def handle_frame():
-  global last_state
+  global last_state, 
   color("white")
   box(0,0,1000,1000)
   color("black")
