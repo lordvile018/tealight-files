@@ -11,7 +11,7 @@ def handle_message(message):
   global carNumber, users, last_state, lastsend
   if "to" in message:
     to=message['to']
-    if to == "server":
+    if to == "server" or to == "all":
       if "type" in message:
         type = message['type']
         if type == "heartbeat":
