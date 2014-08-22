@@ -7,7 +7,7 @@ x=0
 users=[]
 lastsend={}
 last_state = ""
-user_positions = {}
+user_positions = []
 def handle_message(message):
   global carNumber, users, last_state, lastsend
   if "to" in message:
