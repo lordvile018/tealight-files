@@ -21,7 +21,7 @@ def handle_message(message):
            print users
         elif type == "status":
             print message
-            last_state = message['payload']
+            last_state = message['payload']['status']
 def handle_frame():
   global last_state
   color("white")
