@@ -7,7 +7,7 @@ x=0
 users=[]
 lastsend={}
 last_state = ""
-user_positions = []
+user_positions = {}
 def handle_message(message):
   global carNumber, users, last_state, lastsend
   if "to" in message:
@@ -25,7 +25,7 @@ def handle_message(message):
             print message
             last_state = "State change: " + message['payload']['state'] + ": " + str(now())
         elif type =="position":
-          user_positions[message['user_id']] = (message['payload']['x'], message['payload']['y'])
+          user_positions[message['user_id']] = [message['payload']['x'], message['payload']['y']
 def handle_frame():
   global last_state, lastsend, users
   color("white")
