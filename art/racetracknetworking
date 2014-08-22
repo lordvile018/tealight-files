@@ -2,7 +2,6 @@ from tealight.net import connect, send
 from tealight.art import  text, box, color
 from tealight.utils import now
 connect("racetracksix")
-text(75, 200, "This is the server! He will give you drinks!")
 carNumber=0
 x=0
 users=[]
@@ -21,8 +20,9 @@ def handle_message(message):
           print users
 def handle_frame():
   color("white")
-  print "call"
   box(0,0,1000,1000)
+  text(75, 200, "This is the server! He will give you drinks!")
+  text(75, 250, len(users) + " users connected.")
   for user in users:
     if user in lastsend:
       # the user has actually sent a heartbeat
