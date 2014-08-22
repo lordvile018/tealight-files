@@ -26,7 +26,7 @@ def handle_message(message):
             print message
             last_state = "State change: " + message['payload']['state'] + ": " + str(now())
         elif type =="position":
-          user_positions[message['user_id']] = [message['payload']['x'], message['payload']['y']]
+          user_positions[message['user_id']] = [message['payload']['x'], message['payload']['y'], message['payload']['d']]
 def handle_frame():
   global last_state, lastsend, users
   
@@ -48,4 +48,4 @@ def handle_frame():
         lastsend.pop(user, None)
         users.remove(user)
   for pair in user_positions:
-    spot(user_positions[pair][0], user_positions[pair][1], 5)
+    draw_triangle(user_positions[pair][0], user_positions[pair][1], user_positions[pair][2], 10, "red")
