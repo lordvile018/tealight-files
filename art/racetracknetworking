@@ -22,7 +22,7 @@ def handle_message(message):
            print users
         elif type == "status":
             print message
-            last_state = "State change: " + message['payload']['state']
+            last_state = "State change: " + message['payload']['state'] + ": " + str(now())
 def handle_frame():
   global last_state, lastsend, users
   color("white")
