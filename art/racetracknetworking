@@ -23,6 +23,7 @@ def handle_message(message):
             print message
             last_state = message['payload']
 def handle_frame():
+  global last_state
   color("white")
   box(0,0,1000,1000)
   color("black")
