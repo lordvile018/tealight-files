@@ -16,8 +16,8 @@ def handle_message(message):
         if type == "heartbeat":
            lastsend[message['user_id']] = message['payload']
         elif type == "registration":
-          users.append(message['payload'])
-          print users
+           users.append(message['payload'])
+           print users
 def handle_frame():
   color("white")
   box(0,0,1000,1000)
