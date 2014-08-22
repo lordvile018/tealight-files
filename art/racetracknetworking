@@ -20,6 +20,7 @@ def handle_message(message):
            print users
         elif type == "status":
             print message
+            text(75, 300, state)
 def handle_frame():
   color("white")
   box(0,0,1000,1000)
