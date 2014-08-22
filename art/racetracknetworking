@@ -1,3 +1,4 @@
+#Matt Brooks ,Calin Tataru, Adam Williams
 from tealight.net import connect, send
 from tealight.art import  text, box, color, spot
 from tealight.utils import now
