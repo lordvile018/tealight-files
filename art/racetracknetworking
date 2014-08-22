@@ -18,6 +18,8 @@ def handle_message(message):
         elif type == "registration":
            users.append(message['payload'])
            print users
+         elif type == "status
+            print message
 def handle_frame():
   color("white")
   box(0,0,1000,1000)
