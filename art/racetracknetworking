@@ -1,7 +1,7 @@
 from tealight.net import connect, send
 from tealight.art import  text, box, color, spot
 from tealight.utils import now
-from github.calintat import *
+from github.calintat.racetrack import *
 connect("racetracksix")
 carNumber=0
 x=0
