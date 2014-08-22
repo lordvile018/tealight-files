@@ -2,7 +2,7 @@ from tealight.net import connect, send
 import tealight.utils
 import random
 userId= int(tealight.utils.now()) +random.randint(0,1000000)
-connect("racetracktest")
+connect("racetracksix")
 send("connected")
 #def regisrtation_handler(message):
   #for i in range (0, carNumber):
