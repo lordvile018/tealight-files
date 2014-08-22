@@ -1,5 +1,5 @@
 from tealight.net import connect, send
-from tealight.art import  text, rectangle
+from tealight.art import  text, rectangle, color
 from tealight.utils import now
 connect("racetracksix")
 text(75, 200, "This is the server! He will give you drinks!")
