@@ -45,4 +45,4 @@ def handle_frame():
         lastsend.pop(user, None)
         users.remove(user)
   for pair in user_positions:
-    spot(pair[0], pair[1], 5)
+    spot(user_positions[pair][0], user_positions[pair][1], 5)
